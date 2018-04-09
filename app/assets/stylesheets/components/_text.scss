@@ -1,0 +1,118 @@
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: .10454545em;
+  line-height: 1.85714286em;
+  font-weight: 700;
+}
+
+p {
+  font-size: 14px;
+  //letter-spacing: .204545455em;
+  line-height: 1.85714286em;
+}
+
+@include media("<=phone") {
+  body {
+    font-size: 9px;
+  }
+}
+
+@include media(">phone", "<=tablet") {
+  body {
+    font-size: 12px;
+  }
+}
+@include media(">tablet", "<=desktop") {
+  body {
+    font-size: 14px;
+  }
+}
+@include media(">desktop", "<1150px") {
+  body {
+    font-size: 14px;
+  }
+}
+
+@include media(">=1150px", "<=2400px") {
+  body {
+    font-size: 14px;
+  }
+}
+
+@include media(">2400px") {
+  body {
+    font-size: 14px;
+  }
+}
+
+
+
+//
+
+body {
+  font-size: 62.5%;
+  font-style: Arial;
+}
+
+.animation-box {
+  width: 75%;
+  height: 27.5rem;
+  background-color: blue;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.animation-container {
+  width: 1000rem;
+  height: 30rem;
+}
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay:1.2s;
+  animation-delay: 1.2s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+
+/*---make a basic box ---*/
+.box{
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 10px;
+  float: left;
+  border: 1px solid #333;
+  background: #999;
+
+}

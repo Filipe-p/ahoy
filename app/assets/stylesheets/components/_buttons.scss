@@ -1,0 +1,41 @@
+/* Navbar right button */
+.cta-btn {
+  line-height: 40px;
+  font-size: 11px;
+  letter-spacing: .091em;
+  padding: 1.8em 3.6em;
+  text-transform: uppercase;
+  -webkit-transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.cta-black-trans {
+  color: black;
+  border: 1.1px solid black;
+  transition: opacity .3s
+}
+
+.cta-black-trans:hover {
+  color: white;
+  border: 1.1px solid black;
+  background-color: black;
+  text-decoration: none;
+}
+
+.cta-white-trans {
+  color: white;
+  border: 2px solid white;
+}
+
+.cta-black {
+  color: white;
+  border: 1.1px solid black;
+  background-color: black;
+}
+
+.cta-black:hover {
+  color: black;
+  border: 1.1px solid black;
+  background-color: white;
+  text-decoration: none;
+}

@@ -1,0 +1,13 @@
+    <div class="row second">
+      <div class="col-md-4">
+      <h2>Web Consulting</h2>
+      <p>We have deep understanding of development technologies, they're capabilites, limmitation and more. We will find and advise on the best route for you and your business.</p>
+      </div>
+      <div class="col-md-4">
+      <h2>Data Analysis & Business Intelegence </h2>
+      <p>Data, there's a lot of it. Let us turn that into something you can use with our business intelligence tools.</p>
+      </div>
+      <div class="col-md-4"></div>
+      <h2>Rum</h2>
+      <p>An essentail part of a pirates life. If you have Rum we want it! If you need it, we have it. </p>
+    </div>

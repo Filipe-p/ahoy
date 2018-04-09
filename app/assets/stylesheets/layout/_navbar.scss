@@ -1,0 +1,227 @@
+/* Main class */
+.navbar-ac {
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  background: white;
+  transition: all 0.3s ease;
+  display: flex;
+  height: 70px;
+  padding: 0px 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-ac-transparent {
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  background: white;
+  transition: all 0.3s ease;
+  display: flex;
+  height: 70px;
+  padding: 0px 30px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: -70px;
+}
+
+/* Optional class to fix the navbar on top */
+.navbar-ac-fixed {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
+}
+
+/* Navbar logo */
+.navbar-ac-brand {
+  text-decoration: none;
+  letter-spacing: .091em;
+  text-transform: uppercase;
+}
+
+.navbar-ac-brand img{
+max-width: 80px;
+}
+
+.navbar-ac .navbar-ac-brand {
+  color: black;
+}
+
+.navbar-ac-transparent .navbar-ac-brand {
+  color: white;
+}
+
+.navbar-ac-brand:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.navbar-ac .navbar-ac-brand:hover {
+  color: black;
+}
+
+.navbar-ac-transparent .navbar-ac-brand:hover {
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+/* Navbar right section (with form, links, button) */
+.navbar-ac-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navbar item */
+.navbar-ac-item {
+  flex: 0 1 auto;
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+/* Navbar standard link */
+.navbar-ac-link {
+  font-size: 14px;
+}
+
+.navbar-ac .navbar-ac-link {
+  color: black;
+}
+
+.navbar-ac-transparent .navbar-ac-link {
+  color: white;
+}
+
+.navbar-ac-link:hover {
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+/* Navbar right button */
+.navbar-ac-button {
+  margin-left: 10px;
+  padding: 0 20px;
+  line-height: 40px;
+  border: 1.1px solid white;
+  font-size: 11px;
+  letter-spacing: .091em;
+  text-transform: uppercase;
+  -webkit-transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+  border-radius: 0px;
+}
+
+.navbar-ac-button-black {
+  background-color: black;
+  color: white;
+}
+
+.navbar-ac-button-white {
+  background-color: transparent;
+  color: white;
+}
+
+.navbar-ac-button-black:hover {
+  color: black;
+  background-color: white;
+  border-color: black;
+  border: 1.1px solid black;
+}
+
+.navbar-ac-button-white:hover {
+  color: black;
+  background-color: white;
+  border-color: white;
+  text-decoration: none;
+}
+
+/* Navbar dropdown menu */
+.navbar-ac-dropdown-menu {
+  margin-top: 15px;
+  box-shadow: 1px 1px 4px #E6E6E6;
+  border-color: #E6E6E6;
+}
+
+.dropdown i{
+  font-size: 25px;
+}
+
+.navbar-ac-dropdown-menu li > a {
+  transition: color 0.3s ease;
+  font-weight: lighter !important;
+  color: black !important;
+  font-size: 15px !important;
+  line-height: 22px !important;
+  padding: 10px 20px;
+}
+
+.navbar-ac-dropdown-menu li > a:hover {
+  background: transparent !important;
+  color: white !important;
+}
+
+.dropdown .fa{
+color: white;
+}
+
+.navbar-ac-dropdown-menu:before {
+  content: ' ';
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  right: 10px;
+  top: -6px;
+  background-color: white;
+  transform: rotate(45deg);
+  border-left: 1px solid #E6E6E6;
+  border-top: 1px solid #E6E6E6;
+}
+
+//-----------------------
+.navbar-ac-right .menu {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.menu ul {
+  margin-bottom: 0px;
+}
+
+.navbar-ac .menu li a{
+  color: black;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 12px;
+  letter-spacing: .091em;
+  text-transform: uppercase;
+}
+
+.navbar-ac-transparent .menu li a{
+  color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 12px;
+  letter-spacing: .091em;
+  text-transform: uppercase;
+}
+
+.navbar-ac .menu li a:hover{
+  color: black;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.navbar-ac-transparent .menu li a:hover{
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.navbar-ac .menu li {
+  display: inline-block;
+}
+
+.navbar-ac-transparent .menu li {
+  display: inline-block;
+}

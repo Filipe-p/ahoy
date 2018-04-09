@@ -1,0 +1,38 @@
+.projects-full img{
+  max-width: 100%;
+}
+
+.img-fold {
+  height: auto;
+  vertical-align: top;
+  width: 100%;
+ // max-height: 50vw;
+  overflow: hidden;
+  transition: max-height .75s;
+}
+
+.img-fold-img {
+  height: auto;
+  vertical-align: top;
+  width: 100%;
+}
+
+.img-fold .projects-full-expanded{
+  //max-height: 1000px;
+
+}
+
+.img-fold-toggle {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  top: -25px;
+}
+
+.project-collage img {
+  width: 100%;
+}
+
+.device-list img {
+  width: 100%;
+}

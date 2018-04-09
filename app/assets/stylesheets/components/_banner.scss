@@ -1,0 +1,171 @@
+/* Banner design */
+.banner {
+  color: black;
+  text-align: center;
+  height: calc(100vh - 70px);
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("rawpixel-com-403498.jpg")
+}
+.banner h1 {
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+// .idea-banner-img-large {
+//   background-image: url('https://res.cloudinary.com/cloudnary-filipe/image/asset/c_scale,w_2206/v1503397788/product-0ab8b695be88f5ceeec0304728309680.jpg');
+//   background-size: cover;
+//   height: 100vh;
+// }
+
+.idea-banner h1 {
+  font-size: 24px;
+  letter-spacing: .20454545em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.idea-banner p {
+  color: #8c8a8a;
+  font-size: 14px;
+  line-height: 1.85714286em;
+}
+
+.idea-banner-img-small {
+  background-image: url("http://res.cloudinary.com/cloudnary-filipe/image/asset/c_scale,w_1622/v1503397775/product-small-bd0fe7eb1a72f85e76eed81bb0654c3e.jpg");
+  background-size: cover;
+  height: 300px;
+
+}
+
+.team h1 {
+  letter-spacing: .20454545em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.team h4 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+
+.team p {
+  font-size: 14px;
+  line-height: 1.85714286em;
+  color: #a7a7a7;
+  text-align: justify;
+}
+
+.team img {
+  max-width: 80%;
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+.contact {
+  background-image: url("http://res.cloudinary.com/cloudnary-filipe/image/upload/c_scale,w_1790/v1504537373/jesus-kiteque-224069_lyzgij.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding-top: 20em;
+  padding-bottom: 100px;
+}
+
+.contact h1 {
+  font-size: 36px;
+  letter-spacing: .20454545em;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 50px;
+}
+
+.ruok-banner {
+  height: calc(100vh - 70px);
+  background-image: url("https://images.unsplash.com/photo-1485217988980-11786ced9454?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=");
+  background-size: cover;
+  color: white;
+}
+
+.limpando-banner {
+  height: calc(100vh - 70px);
+  background-image: url("https://images.unsplash.com/photo-1502343019212-cc6a09783255?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=");
+  background-size: cover;
+  color: black;
+}
+
+.project-banner h4 {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.project-banner h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+
+///____MEDIA QUERIES
+@include media("<=phone") {
+
+
+  .banner li {
+    font-size: 10px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 50px;
+  }
+}
+
+@include media(">phone", "<=tablet") {
+
+
+  .banner li {
+    font-size: 16px;
+    font-weight: lighter;
+    color: white;
+    margin-bottom: 50px;
+  }
+}
+
+@include media(">tablet", "<=desktop") {
+
+
+    .idea-banner-img-large {
+    background-image: url('product-md.jpg');
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
+@include media(">desktop", "<1150px") {
+
+
+  .idea-banner-img-large {
+    background-image: url('product-md.jpg');
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
+@include media(">=1150px", "<=2400px") {
+
+
+  .idea-banner-img-large {
+  background-image: url('https://res.cloudinary.com/cloudnary-filipe/image/asset/c_scale,w_2206/v1503397788/product-0ab8b695be88f5ceeec0304728309680.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+}
+
+@include media(">2400px") {
+
+  .idea-banner-img-large {
+  background-image: url('https://res.cloudinary.com/cloudnary-filipe/image/asset/c_scale,w_2206/v1503397788/product-0ab8b695be88f5ceeec0304728309680.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+}
+
+

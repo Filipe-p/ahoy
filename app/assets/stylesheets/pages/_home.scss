@@ -1,0 +1,54 @@
+/* -------------------------------------
+ * CSS code specific to home page
+ * (margin/padding adjustments)
+ * ------------------------------------- */
+
+.head-list li {
+  padding-left: 2px;
+  padding-right: 2px;
+  letter-spacing: .091em;
+  font-size: 1.5rem;
+}
+
+.head-list li .fa{
+  font-size: 1.1rem;
+  color: #D23333;
+}
+
+
+.services h1 {
+  letter-spacing: .20454545em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.services h2 {
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 20px;
+}
+
+.services p {
+  font-size: 14px;
+  line-height: 1.85714286em;
+  color: #a7a7a7;
+  text-align: justify;
+}
+
+.services .first {
+  padding-bottom: 50px;
+}
+
+.banner-portfolio h1 {
+  letter-spacing: .20454545em;
+}
+
+
+.as-seen-in img {
+  max-width: 150px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+

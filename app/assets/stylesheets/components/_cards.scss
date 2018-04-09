@@ -1,0 +1,66 @@
+.caption {
+  cursor: pointer;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -ms-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+  width: 100%;
+}
+
+.blur {
+  background-color: rgba(0,0,0,0.65);
+  height: 300px;
+  width: 100%;
+  z-index: 5;
+  position: absolute;
+}
+
+.caption-text {
+  z-index: 10;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.port-card img {
+  height: 300px;
+  padding: 0px;
+  float: left;
+  z-index: 4;
+  max-width: 100%;
+}
+
+.port-card:hover .caption{
+  opacity: 1;
+}
+
+.port-card {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.card {
+  background-color: white;
+  padding: 5em 5em;
+}
+
+.card-outer {
+  padding: 2em 2em;
+}
+
+.card .circle {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  box-shadow: 0 0 20px 0 #DBDBDB;
+}
