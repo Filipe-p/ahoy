@@ -58,10 +58,10 @@ html, body {
   .page-wrap {
     min-height: 100%;
     /* equal to footer height */
-    margin-bottom: -70px;
+    margin-bottom: -30px;
   }
   .footer, .page-wrap:after {
     /* .push must be the same height as footer */
-    height: 70px;
+    height: 30px;
   }
 }
